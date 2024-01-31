@@ -6,7 +6,7 @@ from datetime import datetime
 desktop_path = os.path.expanduser("~/Desktop")
 
 # Create a folder name with the current date
-current_date = datetime.now().strftime("%Y-%m-%d")
+current_date = datetime.now().strftime("%m-%d-%Y")
 cleanup_folder = os.path.join(desktop_path, f"Cleanup_{current_date}")
 
 # Create the Cleanup folder if it doesn't exist
